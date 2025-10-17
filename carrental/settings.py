@@ -85,17 +85,6 @@ WSGI_APPLICATION = 'carrental.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME':'carrental',
-        'USER':'root',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
-        'PASSWORD':'Vsagar8888@'
-
-    }
-}
 
 
 # Password validation
@@ -206,8 +195,5 @@ CRONJOBS = [
     ('*/1 * * * *', 'register.cron.clear_expired_bookings'),
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  # React local dev server
-]
 
 CORS_ALLOW_ALL_ORIGINS = True
